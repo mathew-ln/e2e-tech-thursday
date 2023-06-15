@@ -1,6 +1,6 @@
 [
   {
-    "description": "    This Feature tests login scenarios",
+    "description": "  This Feature tests login scenarios",
     "keyword": "Feature",
     "name": "LandingPage Functionality",
     "line": 1,
@@ -22,8 +22,9 @@
             "line": 6,
             "name": "the user is on the landing page",
             "result": {
-              "status": "passed",
-              "duration": 415000000
+              "status": "failed",
+              "duration": 574000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/dashboard\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:61302/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142340:11)\nFrom previous event:\n    at go (http://localhost:61302/__cypress/runner/cypress_runner.js:142302:17)\n    at visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142380:16)\n    at Context.visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142383:14)\n    at wrapped (http://localhost:61302/__cypress/runner/cypress_runner.js:157498:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/step-definitions/LandingPage.spec.ts:6:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)"
             }
           },
           {
@@ -32,8 +33,280 @@
             "line": 9,
             "name": "the user shall see the employee dashboard",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "landingpage-functionality;as-a-toh-user,-i-want-to-navigate-to-the-dashboard-in-order-to-see-the-top-4-heroes-displayed",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "As a TOH user, I want to navigate to the dashboard in order to see the top 4 Heroes displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/dashboard\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:61302/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142340:11)\nFrom previous event:\n    at go (http://localhost:61302/__cypress/runner/cypress_runner.js:142302:17)\n    at visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142380:16)\n    at Context.visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142383:14)\n    at wrapped (http://localhost:61302/__cypress/runner/cypress_runner.js:157498:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/step-definitions/LandingPage.spec.ts:6:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the user shall see the top 4 heroes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "landingpage-functionality;as-a-toh-user,-i-want-to-select-a-hero-from-the-dashboard-in-order-to-see-the-hero-details-displayed",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "As a TOH user, I want to select a hero from the dashboard in order to see the hero details displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/dashboard\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:61302/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142340:11)\nFrom previous event:\n    at go (http://localhost:61302/__cypress/runner/cypress_runner.js:142302:17)\n    at visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142380:16)\n    at Context.visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142383:14)\n    at wrapped (http://localhost:61302/__cypress/runner/cypress_runner.js:157498:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/step-definitions/LandingPage.spec.ts:6:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "the user clicks on bombasto",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the user is redirected to heroes page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "landingpage-functionality;as-a-toh-user,-i-want-to-navigate-to-the-heroes-page-in-order-to-see-8-heroes",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "As a TOH user, I want to navigate to the heroes page in order to see 8 heroes",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/dashboard\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:61302/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142340:11)\nFrom previous event:\n    at go (http://localhost:61302/__cypress/runner/cypress_runner.js:142302:17)\n    at visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142380:16)\n    at Context.visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142383:14)\n    at wrapped (http://localhost:61302/__cypress/runner/cypress_runner.js:157498:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/step-definitions/LandingPage.spec.ts:6:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "the user clicks on the heroes button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the user is redirected to the <Page>",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "landingpage-functionality;as-a-toh-user,-i-want-to-remove-a-hero-in-order-to-see-the-hero-list-decrease",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "As a TOH user, I want to remove a hero in order to see the hero list decrease",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/dashboard\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:61302/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142340:11)\nFrom previous event:\n    at go (http://localhost:61302/__cypress/runner/cypress_runner.js:142302:17)\n    at visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142380:16)\n    at Context.visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142383:14)\n    at wrapped (http://localhost:61302/__cypress/runner/cypress_runner.js:157498:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/step-definitions/LandingPage.spec.ts:6:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "the user is on the heroes page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "the user clicks on the delete button on a hero",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the hero is deleted",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "landingpage-functionality;as-a-toh-user,-i-want-to-add-a-hero-in-order-to-see-the-hero-list-increase",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "As a TOH user, I want to add a hero in order to see the hero list increase",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/dashboard\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:61302/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142340:11)\nFrom previous event:\n    at go (http://localhost:61302/__cypress/runner/cypress_runner.js:142302:17)\n    at visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142380:16)\n    at Context.visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142383:14)\n    at wrapped (http://localhost:61302/__cypress/runner/cypress_runner.js:157498:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/step-definitions/LandingPage.spec.ts:6:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "the user is on the heroes page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "the user types input box <NewHero> and clicks the add hero button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "a new hero is added to the hero list and the number of heroes increase",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "landingpage-functionality;as-a-toh-user,-i-want-to-add-a-hero-without-a-name-in-order-to-see-the-hero-list-remain-the-same",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "As a TOH user, I want to add a hero without a name in order to see the hero list remain the same",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the landing page",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/dashboard\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142341:82)\n    at visitFailedByErr (http://localhost:61302/__cypress/runner/cypress_runner.js:141629:12)\n    at <unknown> (http://localhost:61302/__cypress/runner/cypress_runner.js:142340:11)\nFrom previous event:\n    at go (http://localhost:61302/__cypress/runner/cypress_runner.js:142302:17)\n    at visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142380:16)\n    at Context.visit (http://localhost:61302/__cypress/runner/cypress_runner.js:142383:14)\n    at wrapped (http://localhost:61302/__cypress/runner/cypress_runner.js:157498:43)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/step-definitions/LandingPage.spec.ts:6:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "the user is on the heroes page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "the user clicks on the add hero button without inputting a HeroName",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "nothing happens",
+            "result": {
+              "status": "skipped"
             }
           }
         ]
